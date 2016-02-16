@@ -14,12 +14,13 @@ int result = i - (int)f;
 
 System.out.println("Hello, world!");
 System.out.println("Hello, everyone!");
-System.out.println( "Hallo jemand!");
+System.out.println( 0.1 * 0.1);
 
 System.out.println(i);
 System.out.println(result);
 System.out.println(f);
-System.out.println(9 - 9 % 2 + -7);
+System.out.println(0.1 * 0.1 == 0.01);
+
 
  
      
