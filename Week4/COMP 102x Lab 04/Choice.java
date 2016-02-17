@@ -39,41 +39,41 @@ public class Choice
     public int compareWith(Choice anotherChoice)
     {
         // write your code after this line
-        if (this.type == 0){
+          
+        
+        
+        
+        
+         if (this.type == 0){
                     
-            if (anotherChoice == 0)
+            if (anotherChoice.getType() == 0)
             {return 0;}
-            else if (anotherChoice == 2)
+            else if (anotherChoice.getType() == 2)
             {return 1;}
             else {return -1;}
+        }
             
         else if (this.type == 2){
                     
-            if (anotherChoice == 2)
+            if (anotherChoice.getType() == 2)
             {return 0;}
-            else if (anotherChoice == 1)
+            else if (anotherChoice.getType() == 1)
             {return 1;}
             else {return -1;}
+        }
             
-        else if (this.type == 1){
-                    
-            if (anotherChoice == 1)
+         else {
+                                  
+            if (anotherChoice.getType() == 1)
             {return 0;}
-            else if (anotherChoice == 0)
+            else if (anotherChoice.getType() == 0)
             {return 1;}
-            else {return -1;}   
-       
-           
-        
-
-        
-        
-        
-        
-        
-        //return 0; // this line should be modified/removed upon finishing the implementation of this method
+            else {return -1;}  
+            
+        }
+       }
     
-}
+
     
     /**
      * Draw the choice image (rock/paper/scissors) on the given canvas
@@ -86,6 +86,38 @@ public class Choice
     public void draw(Canvas canvas, int x, int y, int rotation)
     {
         // write your code after this line
+        if (type == 0)
+        {
+            ColorImage choiceImage = new ColorImage("rock.png");
+            choiceImage.setX(0);
+            choiceImage.setY(480);
+            choiceImage.setRotation(0);
+            choiceImage.getX();
+            choiceImage.getY();
+            canvas.add(choiceImage);
+        }
+        
+        else if (type == 1)
+        {
+            ColorImage choiceImage = new ColorImage("paper.png");
+            choiceImage.setX(0);
+            choiceImage.setY(480);
+            choiceImage.setRotation(0);
+            System.out.println(choiceImage.getX());
+            System.out.println(choiceImage.getY());
+            canvas.add(choiceImage);
+        }
+        else
+        {
+            ColorImage choiceImage = new ColorImage("scissors.png");
+            choiceImage.setX(0);
+            choiceImage.setY(480);
+            choiceImage.setRotation(0);
+            choiceImage.getX();
+            choiceImage.getY();
+            canvas.add(choiceImage);
+        }
+
 
         
         
@@ -94,5 +126,7 @@ public class Choice
         
         
         
+
     }
 }
+

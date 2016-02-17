@@ -16,7 +16,9 @@ public class Computer
     public void makeChoice()
     {
         // write your code after this line
-
+       Random compGen = new Random();
+       Choice choice = new Choice(compGen.nextInt(3));
+       this.choice = choice;
 
         
         
