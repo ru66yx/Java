@@ -21,6 +21,21 @@ System.out.println(result);
 System.out.println(f);
 System.out.println(0.1 * 0.1 == 0.01);
 
+i = 8;
+int j = 4;
+i -= 2;
+j *= i;
+result = i - j;
+System.out.println(result);  //-18
+
+int[] array = {2, 1, 0, 2, 3, 4};
+
+System.out.print(array[3]);
+System.out.print(array[4]);
+System.out.print(array[5]);
+
+
+
 
  
      
