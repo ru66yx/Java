@@ -9,7 +9,7 @@ public class Lab04GradedTask2
        
        Canvas canvas = new Canvas(480, 960);
        Choice choice1 = new Choice(0); //Rock
-       choice1.draw(canvas, 0, 480, 0);
+       choice1.draw(canvas, 0, 0, 0);
        
    }
    // You may wish to create some more to test the program.  
@@ -17,7 +17,7 @@ public class Lab04GradedTask2
        
        Canvas canvas = new Canvas(480, 960);
        Choice choice2 = new Choice(1); //Paper
-       choice2.draw(canvas, 0, 480, 0);
+       choice2.draw(canvas, 10, 23, 270);
        
    }
    
@@ -25,7 +25,7 @@ public class Lab04GradedTask2
        
        Canvas canvas = new Canvas(480, 960);
        Choice choice3 = new Choice(2); //Scissors
-       choice3.draw(canvas, 0, 480, 0);
+       choice3.draw(canvas, -47, -104, 180);
        
    }
    

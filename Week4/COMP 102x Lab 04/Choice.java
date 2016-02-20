@@ -89,20 +89,26 @@ public class Choice
         if (type == 0)
         {
             ColorImage choiceImage = new ColorImage("rock.png");
-            choiceImage.setX(0);
-            choiceImage.setY(480);
-            choiceImage.setRotation(0);
+            choiceImage.setX(x);
+            choiceImage.setY(y);
+            choiceImage.setRotation(rotation);
             choiceImage.getX();
             choiceImage.getY();
+            choiceImage.getRotation();
+            System.out.println(choiceImage.getX());
+            System.out.println(choiceImage.getY());
             canvas.add(choiceImage);
         }
         
         else if (type == 1)
         {
             ColorImage choiceImage = new ColorImage("paper.png");
-            choiceImage.setX(0);
-            choiceImage.setY(480);
-            choiceImage.setRotation(0);
+           
+            choiceImage.setX(x);
+            choiceImage.setY(y);
+            choiceImage.getX();
+            choiceImage.getY();
+            choiceImage.setRotation(rotation);
             System.out.println(choiceImage.getX());
             System.out.println(choiceImage.getY());
             canvas.add(choiceImage);
@@ -110,11 +116,14 @@ public class Choice
         else
         {
             ColorImage choiceImage = new ColorImage("scissors.png");
-            choiceImage.setX(0);
-            choiceImage.setY(480);
-            choiceImage.setRotation(0);
+            
+            choiceImage.setX(x);
+            choiceImage.setY(y);
             choiceImage.getX();
             choiceImage.getY();
+            choiceImage.setRotation(rotation);
+            System.out.println(choiceImage.getX());
+            System.out.println(choiceImage.getY());
             canvas.add(choiceImage);
         }
 
